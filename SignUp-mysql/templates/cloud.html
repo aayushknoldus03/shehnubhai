@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %} 
+<h2>Select a cloud in which you want to deploy your K8s cluster</h2> 
+     <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="cloudDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Cloud Service
+        </button>
+        <div class="dropdown-menu" aria-labelledby="cloudDropdown">
+          <a class="dropdown-item" href="/aws">AWS</a>
+          <a class="dropdown-item" href="/azure">Azure</a>
+          <a class="dropdown-item" href="/gcp">GCP</a>
+        </div>
+      </div>
+    
+{% endblock content %} 
